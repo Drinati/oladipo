@@ -7,7 +7,7 @@ public class Rectangle extends Shape {
         this(1,1);
     }
     public Rectangle(double width, double length) {
-        super(width, length)
+        super();
         
         this.width = width;
         this.length = length;
@@ -15,8 +15,12 @@ public class Rectangle extends Shape {
 
     @Override
     public double getArea() {
-        // A = w * l
-        return width * length;
+        return length * width;
+    }
+    @Override
+    public String getName() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getName'");
     }
 
 }

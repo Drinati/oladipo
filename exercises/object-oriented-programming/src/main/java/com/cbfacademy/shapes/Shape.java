@@ -1,35 +1,26 @@
 package com.cbfacademy.shapes;
 
 public abstract class Shape {
-    private double height;  
-    protected double width;
-    private String name;  
-
-   public Shape(double area, String name2) {
-        //TODO Auto-generated constructor stub
+  
+    public abstract String getName();
+    public abstract double getArea();
     }
 
-public void setValues(double height, double width) {
-      this.height = height;
-      this.width = width;
-   }
+        public abstract class Shape implements ShapeInterface{
+  
+            public String name;
+             
+            public Shape(String name) {
+            this.name=name;
+            }
+              
+            public String getName(){
+            return name;
+            }
+             
+            public abstract double getArea();
+            
+        }
 
-   public double getHeight() {
-       return height;
-   }
-     
 
-   public double getWidth() {
-       return width;
-   } 
-
-
-   public double getArea(double area) {
-    return area;
-   }
-
-   public String getName(){
-   return name;
-   }
-}
 

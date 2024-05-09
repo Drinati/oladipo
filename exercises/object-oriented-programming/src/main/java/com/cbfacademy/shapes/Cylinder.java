@@ -2,11 +2,17 @@ package com.cbfacademy.shapes;
 
 public class Cylinder extends Shape {
 
-    public Cylinder(double radius, double height) {
-        this.radius = radius;
-        
-        
-        
-    }
-    
-}
+        private double area;
+        private double radius2;
+      
+        public Cylinder(double radius, double height) {
+          super(radius);
+          this.area =  (height * Math.PI * (radius2));
+        }
+      
+      
+        @Override
+        public double getArea() {
+         return this.area;
+        }
+      }
